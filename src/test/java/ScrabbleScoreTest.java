@@ -67,7 +67,7 @@ public class ScrabbleScoreTest {
         assertEquals(8, scrabble.getScore());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testAnEmptyInput() {
         Scrabble scrabble = new Scrabble("");

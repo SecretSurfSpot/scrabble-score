@@ -7,16 +7,17 @@ class Scrabble {
   Map<Character, Integer> mapLetterScores = new HashMap<Character, Integer>();
 
     Scrabble(String word) {
-      for (int i = 0; i < allLetters.length; i++) {
-        char [] allLettersToChars = allLetters[i].toCharArray();
-        for (int j = 0; j < allLettersToChars.length; j++) {
-          mapLetterScores.put(allLettersToChars[j], scores[i]);
+      if (word != null)
+        for (int i = 0; i < allLetters.length; i++) {
+          char [] allLettersToChars = allLetters[i].toCharArray();
+          for (int j = 0; j < allLettersToChars.length; j++) {
+            mapLetterScores.put(allLettersToChars[j], scores[i]);
+          }
         }
-      }
-      char [] letterToChars = word.toLowerCase().toCharArray();
-      for (int k = 0; k < letterToChars.length; k++) {
-        this.score += mapLetterScores.get(letterToChars[k]);
-      }
+        char [] letterToChars = word.toLowerCase().toCharArray();
+        for (int k = 0; k < letterToChars.length; k++) {
+          this.score += mapLetterScores.get(letterToChars[k]);
+        }
     }
 
     int getScore() {
