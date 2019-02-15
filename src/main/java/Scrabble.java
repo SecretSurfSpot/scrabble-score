@@ -13,7 +13,7 @@ class Scrabble {
           mapLetterScores.put(allLettersToChars[j], scores[i]);
         }
       }
-      char [] letterToChars = word.toCharArray();
+      char [] letterToChars = word.toLowerCase().toCharArray();
       for (int k = 0; k < letterToChars.length; k++) {
         this.score += mapLetterScores.get(letterToChars[k]);
       }

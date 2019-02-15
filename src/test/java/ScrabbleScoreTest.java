@@ -11,7 +11,7 @@ public class ScrabbleScoreTest {
         assertEquals(1, scrabble.getScore());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testAUpperCaseLetter() {
         Scrabble scrabble = new Scrabble("A");
@@ -53,7 +53,7 @@ public class ScrabbleScoreTest {
         assertEquals(22, scrabble.getScore());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testALongMixCaseWord() {
         Scrabble scrabble = new Scrabble("OxyphenButazone");
